@@ -30,7 +30,7 @@ This curated selection emphasizes performance optimization, commercial validatio
 ### 🥇 I. PROFESSIONAL EXPERIENCE & VALIDATED SYSTEMS 🥇
 --------------------------------------------------------------------------------------------------
 
-### 1. **[Professional] Low-Power UART Data Logger – EFM32 (UCSD Ocean Dynamics)** 🔋📡
+### 1. **[Professional] Low-Power UART Data Logger – EFM32 (Mulitiscale Ocean Dynamics)** 🔋📡
 - **Context**: Designed for **UCSD Multi-Scale Ocean Dynamics** research deployments. (Organization: [https://www.mod.ucsd.edu/])
 - **Repository**: [https://github.com/pollo2001/Low-Power-Logger]
 - **Description**: Developed a **low-power data logging module** on a 32-bit MCU (EFM32-class) for long-duration sensor capture in commercial deployments. Achieved **90%+ power savings** by utilizing **DMA-driven UART logging** and managing the MCU exclusively in **EM2/low-energy modes**, ensuring microsecond-level timing accuracy under extreme power constraints.
