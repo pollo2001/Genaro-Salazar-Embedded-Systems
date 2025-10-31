@@ -1,7 +1,7 @@
-# Genaro Salazar Ruiz 👨🏽‍💻
+# Genaro Salazar Ruiz 🛜
 ### Systems-Level Embedded & RF Engineer
 
-## ✨ EXPERT PROFILE
+## EXPERT PROFILE
 
 A highly driven Electrical Engineer and Master’s candidate in **Wireless Embedded Systems** (UCSD, June 2027), bridging deep academic knowledge in **RF/DSP** with **3+ years of experience** building high-performance, low-level, and low-power systems.
 
