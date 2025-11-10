@@ -1,63 +1,109 @@
-# Genaro Salazar Ruiz 🛜
-### Systems-Level Embedded & RF Engineer
-
-## EXPERT PROFILE
-
-A highly driven Electrical Engineer and Master’s candidate in **Wireless Embedded Systems** (UCSD, June 2027), bridging deep academic knowledge in **RF/DSP** with **3+ years of experience** building high-performance, low-level, and low-power systems.
-
-My expertise is concentrated in **optimizing embedded systems for low-power consumption (90%+ savings achieved)**, implementing bare-metal **DSP/Control algorithms (Fixed-Point PLL)**, and developing professional **test automation frameworks (Python/SCPI)** for hardware validation. I am actively seeking roles in **Embedded Systems, (Embedded)RF Engineering, and Low-Power Design**—positions where the bridge between hardware, firmware, and software is critical for deterministic performance.
-
-**[My Full Portfolio](https://github.com/pollo2001/genny_portfolio)** 💾    |     **[LinkedIn](https://www.linkedin.com/in/genaro-salazar2001/)** 🔗
+# **Genaro Salazar Ruiz**
+### Systems-Level Embedded & RF Engineer 📡⚡️
 
 ---
 
-## 🔧 SKILLS & TECHNOLOGIES
+## **Professional Summary**
 
-| Category | Key Proficiencies |
-| :--- | :--- |
-| **Languages** | **C, C++, Python,** MATLAB, ArmV8 Assembly |
-| **Embedded Core** | **Low-Power Design (EMx/Sleep Modes), DMA, ISR**, Real-Time Control (PID) |
-| **RF/DSP** | **Fixed-Point Math, PLL, OFDM/QPSK**, Signal Processing |
-| **Platforms** | **EFM32, LMX2820, STM32, MSP430, ESP32**, Raspberry Pi, Arduino|
-| **Tools/Dev** | Git, Docker, VSCode, CCStudio, **Test Automation Frameworks** |
+Electrical Engineer and M.S. candidate in **Wireless Embedded Systems** (UC San Diego, 2027) specializing in **embedded firmware, RF systems, and real-time DSP/control**.  
+Over **three years of hands-on experience** building and optimizing hardware-driven systems — from low-power oceanographic platforms to precision RF synthesizers.  
+
+Focused on **deterministic performance**, **signal-chain optimization**, and **cross-domain system integration** bridging hardware, firmware, and test automation.  
+
+> Design at the intersection of timing, power, and precision.
+
+---
+
+## **Technical Proficiencies**
+
+| Category | Core Strengths |
+|:--|:--|
+| **Languages** | C, C++, Python, MATLAB, Armv8 Assembly |
+| **Embedded Systems** | DMA, ISR, Low-Power (EMx), Real-Time Control (PID), Sensor Integration |
+| **RF / DSP** | Fixed-Point Math, PLLs, QPSK/OFDM, Phase Noise Analysis |
+| **Platforms** | EFM32, LMX2820, STM32, MSP430, ESP32, Raspberry Pi |
+| **Tools & Frameworks** | Git, VSCode, PySerial, CCStudio, Test Automation (Python/SCPI) |
 
 ---
 
-## 📂 HIGH-IMPACT PROJECT SHOWCASE
+## **Flagship Engineering Projects**
 
-This curated selection emphasizes performance optimization, commercial validation, and deep DSP/RF expertise.
-
-### 🥇 I. PROFESSIONAL EXPERIENCE & VALIDATED SYSTEMS 🥇
---------------------------------------------------------------------------------------------------
-
-### 1. **[Professional] Low-Power UART Data Logger – EFM32 (Mulitiscale Ocean Dynamics)** 🔋📡
-- **Context**: Designed for **UCSD Multi-Scale Ocean Dynamics** research deployments. (Organization: [https://www.mod.ucsd.edu/])
-- **Repository**: [https://github.com/pollo2001/Low-Power-Logger]
-- **Description**: Developed a **low-power data logging module** on a 32-bit MCU (EFM32-class) for long-duration sensor capture in commercial deployments. Achieved **90%+ power savings** by utilizing **DMA-driven UART logging** and managing the MCU exclusively in **EM2/low-energy modes**, ensuring microsecond-level timing accuracy under extreme power constraints.
-- **Skills Used**: **C**, **Low-Power Embedded Design (EM2)**, **DMA**, **ISR/Interrupts**, EFM32 Firmware, Real-Time Data Logging.
-
-### 2. **[Professional] RF Synthesizer Test Automation Framework (Z-Communications)** 💻
-- **Context**: Developed for **Z-Communications** (Organization: [https://www.zcomm.com/]).
-- **Repository**: [Coming Soon]
-- **Description**: Designed and implemented a robust **Python-based test automation framework** with a GUI to interface with and validate proprietary RF hardware. The tool used a serial/SCPI-like protocol to automate critical functions—including frequency settling time and power level characterization—significantly accelerating product validation and time-to-market.
-- **Skills Used**: **Python**, **Test Automation**, GUI Development, Serial Communication (SCPI-like Protocol), Data Acquisition, RF System Validation.
-
-### 🛠️ II. CORE FIRMWARE & DSP DEPTH 🛠️
---------------------------------------------------
-
-### 3. **[BareMetalPLL – Digital Phase-Locked Loop Simulation (C)](https://github.com/pollo2001/BareMetalPLL)** ⚡
-- **Repository**: [https://github.com/pollo2001/BareMetalPLL]
-- **Description**: Developed a **bare-metal C simulation** of an **Integer-N Digital Phase-Locked Loop (DPLL)** for RF synthesizer modeling. The critical PI control loop was implemented using **Q16.16 fixed-point arithmetic** without any dynamic memory, proving the ability to engineer high-performance, deterministic DSP control systems.
-- **Skills Used**: **Bare-Metal C**, **Fixed-Point Arithmetic (Q16.16)**, Digital Signal Processing (DSP), Control Systems (PI Controller), Embedded Software Architecture.
-
-### 4. **[SafeStep Visual Aid Module – ESP32-CAM](https://github.com/pollo2001/SafeStep-Visual-Aid-Impairment-Module)** 👁️‍🗨️
-- **Repository**: [https://github.com/pollo2001/SafeStep-Visual-Aid-Impairment-Module]
-- **Description**: Engineered a low-cost **visual aid module** using the **ESP32-CAM**. Developed embedded firmware to handle video streaming, managed wireless connectivity, and incorporated crucial product lifecycle features like **Over-The-Air (OTA) updates** for end-to-end reliability.
-- **Skills Used**: ESP32, C/C++, **Firmware Development**, Embedded Systems, OTA Updates, Hardware Integration, IoT.
-
-### 5. **[Line-Following Robot (Real-Time PID Control)](https://github.com/pollo2001/Line-Follower-RC)** 🤖
-- **Repository**: [https://github.com/pollo2001/Line-Follower-RC]
-- **Description**: Designed and implemented a **real-time PID control system** on an **EFM32 MCU** for precise motor speed and navigation control. The system’s robustness led to success in competitive events, validating the accurate tuning and execution of the control firmware under dynamic constraints.
-- **Skills Used**: **C**, **PID Control (Tuning/Implementation)**, **Real-Time Systems**, EFM32 MCU, Sensor Integration, Control Theory.
+Precision-built systems demonstrating control-loop accuracy, power optimization, and validated hardware interfacing.
 
 ---
+
+### 🔋 **1. Low-Power DMA UART Logger – Multiscale Ocean Dynamics**  
+**Repository:** [Low-Power-Logger](https://github.com/pollo2001/Low-Power-Logger)  
+**Context:** Firmware developed for **UCSD’s Multiscale Ocean Dynamics Lab**, supporting extended oceanographic research deployments.  
+- Architected a **DMA-driven UART logging framework** allowing the MCU to remain in deep-sleep (EM2) while maintaining microsecond-level timing.  
+- Achieved **>90% power reduction** through interrupt-based packet collection and peripheral wake-on-UART design.  
+- Validated on **field-deployed sensor platforms** requiring deterministic timing and multi-day uptime.  
+- **NDA-compliant sanitized release.**
+
+
+**Skills:** C, EFM32 Firmware, DMA, ISR, Low-Power Embedded Design, Real-Time Logging  
+
+---
+
+### 📡 **2. RF Synthesizer Test Automation Framework – Z-Communications, Inc.**  
+**Repository:** [Smart_PLL_Interface](https://github.com/pollo2001/Smart_PLL_Interface)  
+**Context:** Developed a **Python-based GUI test automation suite** for Z-Comm’s Smart SSG PLL synthesizer line.  
+- Created a **multi-threaded, SCPI-style control layer** for real-time PLL characterization and validation.  
+- Automated frequency sweeps, lock-time verification, and phase-noise measurement routines.  
+- Reduced manual test time by over **60%**, accelerating hardware validation cycles.
+-  NDA Compliant
+
+**Skills:** Python, GUI Development , Serial Communication, RF Control, SCPI Automation  
+
+---
+
+### ⚙️ **3. BareMetalPLL – Digital Phase-Locked Loop Simulation (C)**  
+**Repository:** [BareMetalPLL](https://github.com/pollo2001/BareMetalPLL)  
+**Context:** Developed a **bare-metal C simulation** of an Integer-N Digital PLL for synthesizer modeling and control analysis.  
+- Implemented a **Q16.16 fixed-point arithmetic** loop filter for deterministic, hardware-accurate execution.  
+- Designed a **Type-II Integer-N architecture** with modular components for NCO, dividers, and PI control.  
+- Eliminated dynamic memory for **predictable, real-time performance** suitable for embedded integration.  
+- Structured for future **Fractional-N and DSM** extensions to analyze phase noise and fine frequency control.  
+
+**Skills:** C (C17), Fixed-Point DSP, PLL Design, Control Systems, Embedded Simulation  
+
+---
+
+### 👁️‍🗨️ **4. Visual Aid Module – ESP32-CAM**  
+**Repository:** [SafeStep-Visual-Aid-Impairment-Module](https://github.com/pollo2001/SafeStep-Visual-Aid-Impairment-Module)  
+**Context:** Designed a **wearable visual-aid module** using the **ESP32-CAM**, streaming video to a YOLO-based object-detection system for real-time hazard alerts and audio feedback.  
+- Developed firmware with **OTA update support**, enabling wireless deployment and maintenance.  
+- Integrated **Wi-Fi video streaming** and synchronized AI feedback with mechanical subsystems.  
+- Delivered a **compact, low-power prototype** focused on accessibility and human-centered design.  
+
+**Skills:** ESP32, C/C++, OTA Firmware, IoT Integration, Computer Vision Systems  
+
+---
+
+### 🤖 **5. Line-Following Robot – Real-Time PID Control**  
+**Repository:** [Line-Follower-RC](https://github.com/pollo2001/Line-Follower-RC)  
+**Context:** Built on the **Arduino Mega 2560**, this project implemented a fully tunable **PID control system** for a 7-sensor line-following robot.  
+- Engineered a **weighted photoresistor feedback algorithm** for continuous line tracking and smooth path correction.  
+- Integrated **real-time gain tuning** using potentiometers for on-the-fly PID optimization during competition.  
+- Achieved **first-place performance** in multiple line-following challenges, demonstrating stable control at high speeds.  
+- Designed modular firmware with calibration, motor control, and diagnostic modes for repeatable, test-driven tuning.  
+
+**Skills:** C/C++ (Arduino), PID Control, Embedded Systems, Sensor Fusion, Real-Time Calibration  
+
+---
+
+## **Professional Focus**
+
+- Real-time embedded control & optimization  
+- RF system validation and test automation  
+- Power-aware embedded architecture  
+- Cross-domain firmware integration  
+
+> I design systems where timing, power, and control converge — from low-power sensing to RF synthesis.
+
+---
+
+## **Links**
+
+- [Full Portfolio](https://github.com/pollo2001/genny_portfolio)  
+- [LinkedIn](https://www.linkedin.com/in/genaro-salazar2001/)
