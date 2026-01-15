@@ -6,9 +6,10 @@
 ## **Professional Summary**
 
 Electrical Engineer and M.S. candidate in **Wireless Embedded Systems** (UC San Diego, 2027) specializing in **embedded firmware, RF systems, and real-time DSP/control**.  
+
 Over **three years of hands-on experience** building and optimizing hardware-driven systems — from low-power oceanographic platforms to precision RF synthesizers.  
 
-Focused on **deterministic performance**, **signal-chain optimization**, and **cross-domain system integration** bridging hardware, firmware, and test automation.  
+Focused on **deterministic performance**, **signal-chain optimization**, and **cross-domain system integration**, bridging hardware, firmware, and test automation.  
 
 > Design at the intersection of timing, power, and precision.
 
@@ -19,8 +20,8 @@ Focused on **deterministic performance**, **signal-chain optimization**, and **c
 | Category | Core Strengths |
 |:--|:--|
 | **Languages** | C, C++, Python, MATLAB, Armv8 Assembly |
-| **Embedded Systems** | DMA, ISR, Low-Power (EMx), Real-Time Control (PID), Sensor Integration |
-| **RF / DSP** | Fixed-Point Math, PLLs, QPSK/OFDM, Phase Noise Analysis |
+| **Embedded Systems** | DMA, ISR, Low-Power (EMx), Real-Time Control (PID), Sensor Integration, PCB Design |
+| **RF / DSP** | PLLs (Integer-N/Fractional-N), Fixed-Point Q16.16, Phase Tracking, Loop Filter Design |
 | **Platforms** | EFM32, LMX2820, STM32, MSP430, ESP32, Raspberry Pi |
 | **Tools & Frameworks** | Git, VSCode, PySerial, CCStudio, Test Automation (Python/SCPI) |
 
@@ -53,11 +54,24 @@ Precision-built systems demonstrating control-loop accuracy, power optimization,
 - Reduced manual test time by over **60%**, accelerating hardware validation cycles.
 -  NDA Compliant
 
-**Skills:** Python, GUI Development , Serial Communication, RF Control, SCPI Automation  
+**Skills:** Python, GUI Development, Serial Communication, RF Control, SCPI Automation  
 
 ---
 
-### ⚙️ **3. BareMetalPLL – Digital Phase-Locked Loop Simulation (C)**  
+
+### ⚡ **3. Three-Wire SPI Bit-Bang – PLL Synthesizer Initialization - Z-Communications, Inc.**
+**Repository:** [NDA-Generic-BitBang-OneTime](https://github.com/pollo2001/NDA-Generic-BitBang-OneTime)
+**Context**: Designed a compact bit-bang SPI implementation to program a **PLL frequency synthesizer** on an MSP430, where hardware SPI lines were unavailable due to board constraints.  
+- Implemented three-wire protocol (DATA, CLK, LE) for 24-bit register writes to configure PLL dividers, charge pump settings, and reference frequency.
+- Prioritized simplicity over speed — one-time initialization negated the need for a hardware SPI peripheral, reducing pin conflicts and firmware complexity.
+- MCU enters deep sleep (LPM4) after initialization to minimize current draw and ensure brownout safety during RF operation.
+- NDA-compliant release preserving protocol logic without exposing proprietary register maps.
+
+**Skills:** Embedded C, Bit-Bang SPI, MSP430, RF Synthesizer Programming, Low-Power Design, Hardware Constraint Solving
+
+---
+
+### ⚙️ **4. BareMetalPLL – Digital Phase-Locked Loop Simulation (C)**  
 **Repository:** [BareMetalPLL](https://github.com/pollo2001/BareMetalPLL)  
 **Context:** Developed a **bare-metal C simulation** of an Integer-N Digital PLL for synthesizer modeling and control analysis.  
 - Implemented a **Q16.16 fixed-point arithmetic** loop filter for deterministic, hardware-accurate execution.  
@@ -69,26 +83,15 @@ Precision-built systems demonstrating control-loop accuracy, power optimization,
 
 ---
 
-### 👁️‍🗨️ **4. Visual Aid Module – ESP32-CAM**  
+### 👁️‍🗨️ **5. Visual Aid Module – ESP32-CAM Hardware & Firmware**  
 **Repository:** [SafeStep-Visual-Aid-Impairment-Module](https://github.com/pollo2001/SafeStep-Visual-Aid-Impairment-Module)  
-**Context:** Designed a **wearable visual-aid module** using the **ESP32-CAM**, streaming video to a YOLO-based object-detection system for real-time hazard alerts and audio feedback.  
-- Developed firmware with **OTA update support**, enabling wireless deployment and maintenance.  
-- Integrated **Wi-Fi video streaming** and synchronized AI feedback with mechanical subsystems.  
-- Delivered a **compact, low-power prototype** focused on accessibility and human-centered design.  
+**Context:** Designed a **mounted visual-aid module** from the ground up, including a custom PCB layout mimicking a development board optimized for camera interfacing and compact form factor. 
+- **Designed custom PCB** replicating ESP32-CAM devboard functionality with camera interface routing, power regulation, and antenna placement optimized for mounted deployment.
+- Developed firmware with **OTA update support** for wireless deployment and field maintenance. 
+- Integrated **Wi-Fi video streaming** to an external YOLO-based object detection system, synchronized with audio feedback and mechanical subsystems.
+- Delivered a **compact, low-power prototype** focused on accessibility and human-centered design.
 
-**Skills:** ESP32, C/C++, OTA Firmware, IoT Integration, Computer Vision Systems  
-
----
-
-### 🤖 **5. Line-Following Robot – Real-Time PID Control**  
-**Repository:** [Line-Follower-RC](https://github.com/pollo2001/Line-Follower-RC)  
-**Context:** Built on the **Arduino Mega 2560**, this project implemented a fully tunable **PID control system** for a 7-sensor line-following robot.  
-- Engineered a **weighted photoresistor feedback algorithm** for continuous line tracking and smooth path correction.  
-- Integrated **real-time gain tuning** using potentiometers for on-the-fly PID optimization during competition.  
-- Achieved **first-place performance** in multiple line-following challenges, demonstrating stable control at high speeds.  
-- Designed modular firmware with calibration, motor control, and diagnostic modes for repeatable, test-driven tuning.  
-
-**Skills:** C/C++ (Arduino), PID Control, Embedded Systems, Sensor Fusion, Real-Time Calibration  
+**Skills:** ESP32, PCB Design, C/C++, OTA Firmware, Camera Interface Routing, Power Management, IoT Integration
 
 ---
 
