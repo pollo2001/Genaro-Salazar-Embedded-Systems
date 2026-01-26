@@ -102,7 +102,7 @@ Precision-built systems demonstrating control-loop accuracy, power optimization,
 - Power-aware embedded architecture  
 - Cross-domain firmware integration  
 
-> I design systems where timing, power, and control converge — from low-power sensing to RF synthesis.
+> Designing systems where timing, power, and control converge
 
 ---
 
