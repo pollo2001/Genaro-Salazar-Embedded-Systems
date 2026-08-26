@@ -46,7 +46,20 @@ Precision-built systems demonstrating control-loop accuracy, power optimization,
 
 ---
 
-📊 **2. NDA-Safe Automated RF TestBench – HIL Power Sweep**
+### 📟 **2. STM32 Multi-GHz Digital RF Prescaler & Division Controller**
+**Repository:** [RF-Prescaler-STM32](https://github.com/pollo2001/Generic-RF-Prescaler)
+**Context:** Bare-metal C firmware on an **STM32C0** providing a deterministic, low-latency control interface for multi-GHz RF prescalers and integer frequency dividers in benchtop/automated test setups.
+- Built a **deterministic 7-bit parallel output bus** driving hardware division ratios (div 0–127) via direct GPIO register bitmask operations, eliminating serial-bus latency and jitter during divider state changes.
+- Designed a **draft-staging state machine** that buffers quadrature encoder input into an uncommitted "draft" value, preventing destructive intermediate-frequency transients before a value is latched.
+- Implemented a **software-level hardware abstraction layer** to remap 7-segment display traces per PCB revision, decoupling board-layout constraints from the core RF state-machine driver.
+- Added gesture-based control (single/triple-click latch and reset, idle-timeout auto-revert, long-hold hardware reset) for reliable bench operation.
+- **NDA-compliant sanitized proof-of-concept release** (~40% reduced footprint vs. proprietary production build).
+
+**Skills:** C, STM32 Firmware, GPIO Bitmask Control, State Machines, Hardware Abstraction, RF Synthesizer Control
+
+---
+
+📊 **3. NDA-Safe Automated RF TestBench – HIL Power Sweep**
 * **Repository:** [Automated-RF-TestBench](https://github.com/pollo2001/Automated-RF-TestBench)
 * **Context:** Developed a Python-based Hardware-in-the-Loop (HIL) automation GUI to synchronize embedded MCU targets with legacy GPIB test equipment for phase-aligned RF sweeps.
 * Engineered a **zero-polling crash detector** that calculates real-time derivatives of GPIB power readings to instantly halt sweeps upon hardware failure (>30dB drop), requiring zero serial I/O overhead.
@@ -57,7 +70,7 @@ Precision-built systems demonstrating control-loop accuracy, power optimization,
 
 ---
 
-### 📡 **3. Full-Acces RF Synthesizer Master GUI – Z-Communications, Inc.**  
+### 📡 **4. Full-Access RF Synthesizer Master GUI – Z-Communications, Inc.**  
 **Repository:** [Smart_PLL_Interface](https://github.com/pollo2001/Smart_PLL_Interface)  
 **Context:** Architected a comprehensive **Python-based GUI control application** for Z-Comm’s Smart SSG PLL synthesizer line.  
 - Designed a non-blocking command queue and **optimistic UI** updates to maintain a highly responsive frontend during complex, high-traffic read/write operations.
@@ -69,7 +82,7 @@ Precision-built systems demonstrating control-loop accuracy, power optimization,
 
 ---
 
-### ⚡ **4. Three-Wire SPI Bit-Bang – PLL Synthesizer Initialization - Z-Communications, Inc.**
+### ⚡ **5. Three-Wire SPI Bit-Bang – PLL Synthesizer Initialization - Z-Communications, Inc.**
 **Repository:** [NDA-Generic-BitBang-OneTime](https://github.com/pollo2001/NDA-Generic-BitBang-OneTime)
 **Context**: Designed a compact bit-bang SPI implementation to program a **PLL frequency synthesizer** on an MSP430, where hardware SPI lines were unavailable due to board constraints.  
 - Implemented three-wire protocol (DATA, CLK, LE) for 24-bit register writes to configure PLL dividers, charge pump settings, and reference frequency.
@@ -78,18 +91,6 @@ Precision-built systems demonstrating control-loop accuracy, power optimization,
 - NDA-compliant release preserving protocol logic without exposing proprietary register maps.
 
 **Skills:** Embedded C, Bit-Bang SPI, MSP430, RF Synthesizer Programming, Low-Power Design, Hardware Constraint Solving
-
----
-
-### ⚙️ **5. BareMetalPLL – Digital Phase-Locked Loop Simulation (C)**  
-**Repository:** [BareMetalPLL](https://github.com/pollo2001/BareMetalPLL)  
-**Context:** Developed a **bare-metal C simulation** of an Integer-N Digital PLL for synthesizer modeling and control analysis.  
-- Implemented a **Q16.16 fixed-point arithmetic** loop filter for deterministic, hardware-accurate execution.  
-- Designed a **Type-II Integer-N architecture** with modular components for NCO, dividers, and PI control.  
-- Eliminated dynamic memory for **predictable, real-time performance** suitable for embedded integration.  
-- Structured for future **Fractional-N and DSM** extensions to analyze phase noise and fine frequency control.  
-
-**Skills:** C (C17), Fixed-Point DSP, PLL Design, Control Systems, Embedded Simulation  
 
 ---
 
